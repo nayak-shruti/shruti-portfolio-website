@@ -139,7 +139,7 @@ HTML{
     margin: 10px;
 }
 .para{
-    text-align:justify;
+    text-align:left;
     font-size: larger;
     font-weight: bolder;
     font-style:inherit;
