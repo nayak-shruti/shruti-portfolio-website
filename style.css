@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&family=Ubuntu:wght@500&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -39,6 +42,13 @@ HTML{
     color:black;
     box-shadow: 0 0 10px whitesmoke;
 }
+/*menu button*/
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
 
 /* HOME */
 #HOME{
@@ -68,19 +78,17 @@ HTML{
     align-items: center;
     position: absolute;
     top:30%;
-    right:0%;
+    right:100px;
 }
 .headings{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'permanent marker';
     font-size: 4rem;
     text-align: center;
-    margin:40px 0px;
-    
-
+    margin:40px 20px;
 }
-.para{
-    font-family:'Times New Roman', Times, serif;
-    font-size:4rem;
+#para{
+    font-family:'gloria hallelujah';
+    font-size:1.5rem;
     text-align:center;
     /*margin: 50px 0px;*/
     font-weight:bolder;
@@ -100,22 +108,59 @@ HTML{
     
 
 }
-#pic{
+.flex{
     display:flex;
+    
 }
-#pic img {
-    width: 246px;
-    height: 300px;
+
+
+.pic  {
+    width: 400px;
+    height: 800px;
+    /*margin:50px 0px 100px 0px;*/
+    padding-left: 100px;   
 }
+
+.container{	
+    transition: transform .2s;
+}
+.container:hover{
+	transform:  scale(1.2);
+}
+.p{
+    margin-left: 100px;
+}
+.skills{
+    color:white;
+    font-size:large;
+    align-items: left;
+}
+.progress {
+    width: 200px;
+    height: 50px;
+    
+}
+  
+.progress::-webkit-progress-value {
+    background:violet;
+}
+
+
 #intro{
     display:flex;
     flex-direction: column;
     text-align:left;
-    padding: 10px;
+    padding-left: 100px;
     font-size:large;
     font-weight: bold;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'gloria hallelujah', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color:white;
+    margin-top: 0px;
+    padding:0%;
+    /*background-color: rgb(154, 109, 196);*/
+    width:600px;
+
+
 }
 
 /* interests */
@@ -124,29 +169,44 @@ HTML{
     flex-direction: column;
     color:white;
     background: url('b.jpg')no-repeat center center/cover;}
+
+.heads{
+    font-family: "ubuntu";
+    font-size: 3rem;
+    text-align: left;
+    color:floralwhite;
+}
+.cont{
+    font-family:'gloria hallelujah';
+    font-size: 1.2rem;
+    text-align: center;
+    padding-left: 50px;
+    
+}
+.box1{
+    background-color:rgb(184, 84, 235);
+    margin-right: 750px;
+    border-radius: 10%;
+}
+
+.box2{
+    background-color: rgb(211, 145, 245);
+    margin-left:750px;
+    border-radius: 10%;
+    
+}
+.box2:hover, .box1:hover{
+    transition: 0.2s ease-in-out;
+    background:rgb(99, 83, 240);
+    color:rgb(203, 237, 241);
+    box-shadow: 0 0 50px whitesmoke;
+
+}
+
     
 
 
-.gallery{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    box-sizing: border-box;
-}
-.galler img{
-    width: 360px;
-    height: 240px;
-    margin: 10px;
-}
-.para{
-    text-align:left;
-    font-size: larger;
-    font-weight: bolder;
-    font-style:inherit;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 500px;
-    margin-right: 500px;
-}
+
 
 /* contact */
 #CONTACT{
@@ -185,10 +245,19 @@ HTML{
     border:none;
     outline:none;
 }
+#send{
+    background-color:deepskyblue;
+    color:black;
+    font-size: 1.2rem;
+    border-radius: 10%;
+    border-style: hidden;
+}
 #send:hover{
     cursor: pointer;
     box-shadow:0 0 10px white;
+    
 }
+
 
 
 
